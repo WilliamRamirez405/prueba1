@@ -98,6 +98,11 @@
             body {
                 background-color: #FFE2CC;
             }
+
+            .content {
+                flex-direction: column; /* Cambia la dirección del flexbox a columna */
+                align-items: center;    /* Centra los elementos en dispositivos pequeños */
+            }
         }
     </style>
 </head>
@@ -154,5 +159,8 @@
         function showSection(sectionId) {
             const sections = document.querySelectorAll('.container');
             sections.forEach(section => section.style.display = 'none');
-            document.getElementById(sectionId.style.display = 'block');
+            document.getElementById(sectionId).style.display = 'block';
         }
+    </script>
+</body>
+</html>
